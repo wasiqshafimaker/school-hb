@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Public School</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+.hero{
+    height:85vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+button{
+    background:#ffc107;
+    color:black;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff9800;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#0d6efd;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0d6efd;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about-text h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+🎓 Sunrise Public School
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Academics</a>
+<a href="#">Admissions</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to Sunrise Public School</h1>
+
+<p>Empowering Students for a Bright Future</p>
+
+<button>Apply Now</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📘 Smart Classrooms</h3>
+<p>Interactive learning with modern technology and digital boards.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Excellent Results</h3>
+<p>Consistently high academic achievements and university placements.</p>
+</div>
+
+<div class="card">
+<h3>⚽ Sports Facilities</h3>
+<p>Football, Cricket, Basketball, Swimming, Athletics and Indoor Games.</p>
+</div>
+
+<div class="card">
+<h3>💻 Computer Labs</h3>
+<p>Advanced computer labs with high-speed internet and coding classes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+
+<h2>About Our School</h2>
+
+<p>
+Sunrise Public School provides quality education that combines academic excellence,
+innovation, creativity, leadership, and character development.
+Our experienced teachers create an engaging environment where every student can succeed.
+</p>
+
+<br>
+
+<p>
+We offer science labs, digital classrooms, libraries, sports complexes, music rooms,
+art studios, and extracurricular activities to help students develop their full potential.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Sunrise Public School</h3>
+
+<p>📍 123 Education Street, Your City</p>
+
+<p>📞 +91 98765 43210</p>
+
+<p>✉ info@sunrisepublicschool.com</p>
+
+<br>
+
+<p>© 2026 Sunrise Public School. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
